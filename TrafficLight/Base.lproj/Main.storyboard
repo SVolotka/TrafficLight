@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,41 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficLight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JGQ-oH-duj">
+                                <rect key="frame" x="29" y="44" width="370" height="420"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJp-TI-GJz">
+                                <rect key="frame" x="29" y="472" width="370" height="420"/>
+                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eJp-TI-GJz" firstAttribute="height" secondItem="JGQ-oH-duj" secondAttribute="height" id="9Mo-sb-1FF"/>
+                            <constraint firstItem="eJp-TI-GJz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="AJE-sF-7ZG"/>
+                            <constraint firstItem="eJp-TI-GJz" firstAttribute="top" secondItem="JGQ-oH-duj" secondAttribute="bottom" constant="8" symbolic="YES" id="PLf-PQ-wBd"/>
+                            <constraint firstItem="eJp-TI-GJz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="PcT-sj-t4q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eJp-TI-GJz" secondAttribute="bottom" id="SOm-fi-lqr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JGQ-oH-duj" secondAttribute="trailing" constant="29" id="XYW-H9-1Ee"/>
+                            <constraint firstItem="JGQ-oH-duj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="bbb-v2-mP6"/>
+                            <constraint firstItem="JGQ-oH-duj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eWk-aN-Gtv"/>
+                            <constraint firstItem="JGQ-oH-duj" firstAttribute="width" secondItem="eJp-TI-GJz" secondAttribute="width" id="hb7-HC-kch"/>
+                            <constraint firstItem="JGQ-oH-duj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rfs-qi-hYU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eJp-TI-GJz" secondAttribute="trailing" constant="29" id="yhc-FE-zwd"/>
+                        </constraints>
                     </view>
+                    <size key="freeformSize" width="428" height="926"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="33.644859813084111" y="97.840172786177106"/>
         </scene>
     </scenes>
 </document>
